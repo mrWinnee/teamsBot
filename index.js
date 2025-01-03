@@ -5,6 +5,7 @@ const {
     ButtonBuilder,
     ButtonStyle,
 } = require("discord.js");
+const { joinVoiceChannel, createAudioPlayer, createAudioResource, AudioPlayerStatus } = require('@discordjs/voice');
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds, // Enables interaction with guild-related events
@@ -13,6 +14,7 @@ const client = new Client({
         GatewayIntentBits.GuildMembers, // Enables listening to member-related events
     ],
 });
+const fs = require("fs");
 require("dotenv").config();
 const guildId = "1061089516737269890"; // Replace with your server ID
 client.on("ready", async () => {
@@ -52,6 +54,8 @@ client.on("ready", async () => {
             });
         }
     });
+    // Write the result array to a JSON file
+    fs.writeFileSync('members.json', JSON.stringify(result, null, 2), 'utf-8');
 
     // Log the result array as a JSON string
     //console.log(JSON.stringify(result, null, 2)); // Pretty-print the JSON with 2-space indentation
@@ -83,7 +87,7 @@ client.on("messageCreate", (message) => {
         );
         message.reply({
             content:
-                "you want to join the tournament ! click the button below ⬇",
+                "You want to join the tournament ! Click the button below ⬇",
             components: [row],
         });
     }
@@ -91,9 +95,9 @@ client.on("messageCreate", (message) => {
 
 client.on("interactionCreate", async (interaction) => {
     if (interaction.customId === "joinBtn") {
-        //await interaction.reply({ content: `Welcome <@${interaction.user.id}> to the tournament!` });
         if (!participants.includes(interaction.user.id)) {
             participants.push(interaction.user.id);
+            await interaction.reply({ content:`<@${interaction.user.id}> joined the tournament` });
         }
         console.log(participants.length);
         //console.log(participants);
@@ -111,7 +115,6 @@ client.on("interactionCreate", async (interaction) => {
                 ],
             });
             // Assuming members.json is in the same directory as your script
-            const fs = require("fs");
             const membersData = JSON.parse(
                 fs.readFileSync("members.json", "utf8"),
             );
@@ -122,11 +125,11 @@ client.on("interactionCreate", async (interaction) => {
                     const member = membersData.find(
                         (member) => member.userId === participantId,
                     );
-                    return member ? { ...member, userId: participantId } : null; // Return null if member not found
+                    return member ? { ...member, userId: participantId } : { username: interaction.user.tag, userId: participantId, roleName: "Diamond", evaluation: 7 };
                 })
                 .filter((member) => member !== null); // Remove null entries
 
-            console.log(participantsWithEvaluation); //////////////////////////// test
+            //console.log(participantsWithEvaluation); //////////////////////////// test
             teams = createTeams(participantsWithEvaluation);
             console.log("Teams created:", teams); // Log the created teams
             const channel = await client.channels.fetch("1321584360599846992"); // ID of tournament chanel
@@ -138,11 +141,12 @@ client.on("interactionCreate", async (interaction) => {
             console.log(JSON.stringify(teams)); // Log the created teams
             sendTeamMessage(teams.teams, channel);
              // create teams voice channels
+            await createVoiceRooms(teams.teams.length);
         }
     }
 });
 
-client.on("messageCreate", async (message) => {
+/* client.on("messageCreate", async (message) => {
     if (message.content.startsWith("!sendTeams") &&
        message.member.permissions.has("ADMINISTRATOR")) {
         // Assume the command is given in the same channel where the teams were created
@@ -153,7 +157,7 @@ client.on("messageCreate", async (message) => {
         if (!channel) {
             console.error("Channel not found.");
             return;
-        } */
+        } 
         for (let i = 0; i < teams.teams.length; i++) {
             const team = teams.teams[i];
             const voiceChannelID = voiceChannels[i];
@@ -173,7 +177,7 @@ client.on("messageCreate", async (message) => {
             }
         }
     }
-});
+}); */
 
 function createTeams(participants) {
     // Sort participants by evaluation in descending order
@@ -237,4 +241,40 @@ async function createVoiceRooms(numRooms) {
     return voiceChannels;
 }
 
+
+
+
+//////////////////////////////////////////////////
+client.on("messageCreate", async (message) => {
+    if (message.content.startsWith("!playRules") && message.member.permissions.has("ADMINISTRATOR")) {
+        const channel = message.member.voice.channel;
+        if (!channel) {
+            message.reply("You need to join a voice channel first!");
+            return;
+        }
+
+        const connection = joinVoiceChannel({
+            channelId: channel.id,
+            guildId: channel.guild.id,
+            adapterCreator: channel.guild.voiceAdapterCreator,
+        });
+
+        const player = createAudioPlayer();
+        const resource = createAudioResource("rulesAudio.mp3");
+
+        player.play(resource);
+        connection.subscribe(player);
+
+        player.on(AudioPlayerStatus.Playing, () => {
+            console.log("Audio is now playing!");
+        });
+
+        player.on(AudioPlayerStatus.Idle, () => {
+            console.log("Audio has finished playing!");
+            connection.destroy();
+        });
+
+        player.on("error", console.error);
+    }
+});
 client.login(process.env.TOKEN);
