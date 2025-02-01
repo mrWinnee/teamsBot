@@ -1,0 +1,450 @@
+"teams": [
+    [
+        {
+            "username": "zeno990",
+            "userId": "950860470854774834",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "goldroger0020",
+            "userId": "1318733402664337442",
+            "roleName": "Emerald",
+            "evaluation": 6
+        },
+        {
+            "username": "hotpancakegirl",
+            "userId": "744868691870744597",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "kratos_x50",
+            "userId": "759406342904872971",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "heineken_1997",
+            "userId": "256403502207729664",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        }
+    ],
+    [
+        {
+            "username": ".winnery05",
+            "userId": "688035879146487831",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "fwaeh",
+            "userId": "766776694643621938",
+            "roleName": "Emerald",
+            "evaluation": 6
+        },
+        {
+            "username": "abderrahm4ne._09817",
+            "userId": "1303002749344026744",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "chuya_forever",
+            "userId": "598227662401568808",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "xdiorz",
+            "userId": "919197378874060821",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        }
+    ],
+    [
+        {
+            "username": "1nonameunknown0",
+            "userId": "793775907575431189",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "_chayma",
+            "userId": "600443756935905291",
+            "roleName": "Emerald",
+            "evaluation": 6
+        },
+        {
+            "username": "ghaieth",
+            "userId": "1202920123917148190",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "chuya_forever",
+            "userId": "1253802745215848569",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "viper0003",
+            "userId": "972923245185622086",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        }
+    ],
+    [
+        {
+            "username": "unescence",
+            "userId": "454449086746198036",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "govos0021",
+            "userId": "1243309825731854479",
+            "roleName": "Emerald",
+            "evaluation": 6
+        },
+        {
+            "username": "yasine0652",
+            "userId": "1223056071778766909",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "oussama_zi",
+            "userId": "572544970804953089",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "kaijin7769",
+            "userId": "320193557921136640",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        }
+    ],
+    [
+        {
+            "username": "h0naz",
+            "userId": "838430274130935849",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "mora.000",
+            "userId": "1166114261014159470",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "moataz0881",
+            "userId": "1208754447673724962",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "chuya_forever",
+            "userId": "369864968562147338",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "sto.rm0",
+            "userId": "1304798773775568897",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        }
+    ],
+    [
+        {
+            "username": "yahyasaturo",
+            "userId": "458601460746289152",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "oussama1107",
+            "userId": "1123373396961533982",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "darius654554",
+            "userId": "1183081489135575104",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "3mtkkalba",
+            "userId": "1316388535191863386",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "ali09630",
+            "userId": "1165007640569577604",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        }
+    ],
+    [
+        {
+            "username": "shawa10",
+            "userId": "1088865142021836830",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "umayknowophelia",
+            "userId": "876872563387691030",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "oussama1998",
+            "userId": "258366891192614915",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "rush034105",
+            "userId": "981174560005165097",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "ripunknonwn",
+            "userId": "1320823027671502848",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        }
+    ],
+    [
+        {
+            "username": "deathgun0501",
+            "userId": "684129680781082648",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "nami_tabasco",
+            "userId": "1283181551714304154",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "a._atrox",
+            "userId": "1260708736192745472",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "chuya_forever",
+            "userId": "1263661103666167848",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "chuya_forever",
+            "userId": "759469594342719508",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        }
+    ],
+    [
+        {
+            "username": "omario03391",
+            "userId": "1246303929877139489",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "chuya_forever",
+            "userId": "444954091358126090", 
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "soufianendh",
+            "userId": "1182412083808174098",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "valentiinoo",
+            "userId": "609462712899993610",
+            "roleName": "Master",
+            "evaluation": 24
+        },
+        {
+            "username": "fouadox.",
+            "userId": "756256585965240413",
+            "roleName": "Master",
+            "evaluation": 24
+        }
+    ],
+    [
+        {
+            "username": "z4ck4",
+            "userId": "668115412076199938",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "itshydrox",
+            "userId": "473087068302606338",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "https_yrangel",
+            "userId": "808430921153642496",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "zorokingofc",
+            "userId": "1172264692236951674",
+            "roleName": "Master",
+            "evaluation": 24
+        },
+        {
+            "username": "shepi0805",
+            "userId": "307623811400990721",
+            "roleName": "Master",
+            "evaluation": 24
+        }
+    ],
+    [
+        {
+            "username": "bloodo05",
+            "userId": "706705596325298260",
+            "roleName": "Challenger",
+            "evaluation": 50
+        },
+        {
+            "username": "chuya_forever",
+            "userId": "398511078440697886",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "daggerart5853",
+            "userId": "659454289965613075",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "lionerbasta",
+            "userId": "1103397088768819200",
+            "roleName": "Master",
+            "evaluation": 24
+        },
+        {
+            "username": "hanabi_aksofia",
+            "userId": "1096504597465530489",
+            "roleName": "Master",
+            "evaluation": 24
+        }
+    ],
+    [
+        {
+            "username": "shinigami9090._22327",
+            "userId": "1251171458223312931",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "hajar0467",
+            "userId": "1193868258340782090",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "haytamovero",
+            "userId": "1094857274595479572",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "gusisalive",
+            "userId": "536903957059076098",
+            "roleName": "Master",
+            "evaluation": 24
+        },
+        {
+            "username": "niggayham",
+            "userId": "763709611664343130",
+            "roleName": "Master",
+            "evaluation": 24
+        }
+    ],
+    [
+        {
+            "username": "raichu_d",
+            "userId": "605761805054246943",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "chuya_forever",
+            "userId": "522401620001161218",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "cheb6859",
+            "userId": "881978878275518514",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "mehdibendjama._35097",
+            "userId": "1256046605342216224",
+            "roleName": "Master",
+            "evaluation": 24
+        },
+        {
+            "username": "jojonas_47",
+            "userId": "430755894301687829",
+            "roleName": "Master",
+            "evaluation": 24
+        }
+    ],
+    [
+        {
+            "username": "kl13_",
+            "userId": "510069221330386947",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "chuya_forever",
+            "userId": "820100782014726175",
+            "roleName": "Diamond",
+            "evaluation": 14
+        },
+        {
+            "username": "yamito9439",
+            "userId": "629605423309258753",
+            "roleName": "Grand Master",
+            "evaluation": 36
+        },
+        {
+            "username": "markost0065",
+            "userId": "304294999606951936",
+            "roleName": "Master",
+            "evaluation": 24
+        },
+        {
+            "username": "chiron2345",
+            "userId": "1297737416274083900",
+            "roleName": "Master",
+            "evaluation": 24
+        }
+    ]
+]
